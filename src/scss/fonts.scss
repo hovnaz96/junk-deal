@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Avenir Next Bold';
+  src: url('../fonts/AvenirNextCyr-Bold.eot');
+  src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+  url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+  url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Light';
+  src: url('../fonts/AvenirNextCyr-Light.eot');
+  src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+  url('../fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Light.woff2') format('woff2'),
+  url('../fonts/AvenirNextCyr-Light.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Medium';
+  src: url('../fonts/AvenirNextCyr-Medium.eot');
+  src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+  url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+  url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url('../fonts/AvenirNextCyr-Regular.eot');
+  src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+  url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+  url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.jd-font-regular {font-family: $defaultFont;}
+.jd-font-medium {font-family: $mediumFont;}
+.jd-font-bold {font-family: $boldFont;}
+.jd-font-light {font-family: $lightFont;}
+
+@for $j from 8 to 38 {
+  .jd-text-#{$j} { font-size: #{$j}px; }
+}
+
+@include media-breakpoint-down(lg) {
+  @for $j from 8 to 38 {
+    .jd-text-#{$j}__mobile { font-size: #{$j}px; }
+  }
+}
+
+.jd-text-50{
+  font-size: 50px;
+}

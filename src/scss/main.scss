@@ -1,0 +1,17 @@
+@import 'variables';
+
+// Packages Styles
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+// Customize
+@import 'fonts';
+@import 'helpers';
+
+// Components
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/home";

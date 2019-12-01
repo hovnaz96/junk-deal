@@ -1,0 +1,23 @@
+$themeColor: #ef4e23;
+$fontColorLight: #707070;
+$fontColorDark: #4a4a4a;
+
+$defaultFont: Avenir Next Regular, sans-serif !default;
+$mediumFont: Avenir Next Medium, sans-serif;
+$boldFont: Avenir Next Bold, sans-serif;
+$lightFont: Avenir Next Light, sans-serif;
+
+
+$body-color:$fontColorLight !default;
+$font-family-base:$defaultFont !default;
+
+$link-hover-color:$themeColor !default;
+
+$navbar-light-hover-color:$themeColor !default;
+$navbar-light-active-color:$themeColor !default;
+
+$input-bg:rgba(255, 255, 255, 0.6);
+$input-placeholder-color:$fontColorDark;
+$input-border-radius:0;
+
+$primary:$themeColor;

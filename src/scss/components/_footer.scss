@@ -1,0 +1,20 @@
+footer{
+  .footer--top{
+    background-color: $themeColor;
+  }
+  .footer--bottom{
+    background-color: $fontColorDark;
+    color:#fff;
+  }
+  .footer-areas a{
+    display: inline-block;
+    border-right: 1px solid #fff;
+    color:#fff;
+    margin-right: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    &:last-child{
+      border-right: none;
+    }
+  }
+}
